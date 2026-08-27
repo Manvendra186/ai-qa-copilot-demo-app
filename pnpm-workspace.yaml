@@ -1,0 +1,13 @@
+# pnpm workspace — two members: server (Express + SQLite) and client (React + Vite).
+packages:
+  - "server"
+  - "client"
+
+# pnpm 11: postinstall build scripts must be approved (esbuild for Vite,
+# better-sqlite3 prebuilt binary).
+onlyBuiltDependencies:
+  - esbuild
+  - better-sqlite3
+allowBuilds:
+  esbuild: true
+  better-sqlite3: true

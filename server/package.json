@@ -1,0 +1,17 @@
+{
+  "name": "demo-server",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Express + SQLite API for the demo app under test (build bible §23)",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "ai-qa-copilot-demo-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Synthetic demo app under test for AI QA Copilot (build bible §23) — Express + SQLite + React with env-flag defect injection",
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "build": "pnpm -r run build",
+    "start": "pnpm --filter demo-server start",
+    "smoke": "node scripts/smoke.mjs",
+    "defect-check": "node scripts/defect_check.mjs"
+  }
+}
