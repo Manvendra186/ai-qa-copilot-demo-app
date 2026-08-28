@@ -9,6 +9,11 @@
     "build": "pnpm -r run build",
     "start": "pnpm --filter demo-server start",
     "smoke": "node scripts/smoke.mjs",
-    "defect-check": "node scripts/defect_check.mjs"
+    "defect-check": "node scripts/defect_check.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:headed": "playwright test --headed"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.48.0"
   }
 }
